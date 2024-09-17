@@ -1,0 +1,135 @@
+/* styles.css */
+
+/* Set the font family for the entire page */
+body {
+    font-family: 'Sitka';
+    margin: 0;
+    padding: 0;
+    background-color: rgba(211, 204, 204, 0.923); /* Semi-transparent background for content */
+    background-size: cover; /* Make sure the image covers the entire background */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    background-attachment: fixed; /* Keep the background image fixed when scrolling */
+    background-position: center; /* Center the background image */
+    overflow-x: hidden; /* Prevent horizontal scroll */
+    color: #f5a9a9; /* Text color to ensure readability */
+}
+
+/* Heading styles */
+h1 {
+    color: #ffffff; /* Make headings white for contrast */
+    text-align: center;
+    margin-top: 20px;
+}
+
+h2 {
+    color: #ffffff;
+    margin-top: 20px;
+}
+
+h3 {
+    color: #898383;
+    margin-top: 15px;
+}
+
+/* Layout */
+.container {
+    width: 90%;
+    margin: auto;
+    max-width: 1200px; /* Constrain width */
+    padding: 20px;
+    box-sizing: border-box;
+    background-image: url('images/aesthetic-background-with-pink-neon-led-light-effect.jpg'); /* Path to your background image */
+    border-radius: 10px;
+}
+
+/* Button */
+.button {
+    display:inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #f5a9a9;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.button:hover {
+    background-color: #3cb371;
+}
+
+/* Table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: rgba(94, 92, 92, 0.8); /* Semi-transparent background for table */
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+th {
+    background-color: #717070;
+    text-align: left;
+}
+
+tr:nth-child(even) {
+    background-color: #474646;
+}
+
+/* Image */
+img {
+    display: block;
+    margin: 20px auto;
+    max-width: 100%;
+    height: auto;
+}
+
+/* Lists */
+ul {
+    list-style-type: square;
+    margin-top: 10px;
+}
+
+ol {
+    margin-top: 10px;
+}
+
+/* Grid for Yoga Asanas */
+.asana-instructions {
+    background-color: #fff; /* White background */
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for effect */
+    font-size: 14px;
+    line-height: 1.5;
+    color: #333; /* Text color */
+}
+
+.asana-item {
+    flex: 1 1 21%; /* Flex-basis: 21% allows 4 items per row */
+    margin: 10px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
+    padding: 10px;
+    border-radius: 8px;
+    color:#333;
+}
+
+.asana-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Ensuring the grid fits within the container */
+.asanas-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; /* Center items */
+}
